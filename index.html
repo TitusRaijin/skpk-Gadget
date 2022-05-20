@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>SKPK GADGET</title>
+    </head>
+    <body>
+    <div id="product">
+
+    </div>
+        <script src="script.js"></script>
+        
+        <script type="text/javascript">
+
+            let hasil = "";
+            for (index in Gadget) {
+                hasil += "<h1>"+Gadget[index].nama+"</h1><br>";
+                hasil += "<img src='"+Gadget[index].foto+"'><br>";
+                hasil += "<h2>"+Gadget[index].harga+"</h1><button>Masukkan ke keranjang</button> <br>";
+            }
+            document.getElementById("product").innerHTML = hasil;
+            
+        </script>
+    </body>
+</html>
